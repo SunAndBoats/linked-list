@@ -10,7 +10,7 @@ const __dirname = dirname(__filename);
 
 export default {
   mode: 'development',
-  entry: './src/index.js',
+  entry: './src/main.js',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
