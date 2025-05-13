@@ -1,13 +1,20 @@
-## 🚀 Primeros pasos
+# 🧠 LinkedList en JavaScript con ES Modules y Webpack
 
-Para iniciar un nuevo proyecto con esta plantilla
+Este proyecto implementa una estructura de datos **LinkedList** (lista enlazada) desde cero usando **JavaScript moderno (ES6+)**, módulos organizados y empaquetado con **Webpack**.
 
-npx degit SunAndBoats/template mi-nuevo-proyecto
-cd mi-nuevo-proyecto
-npm install
-npm run dev
+Incluye los métodos fundamentales y algunos adicionales como extra.
 
-Renombra el proyecto en package.json ("name": "mi-nuevo-proyecto")
-Cambia el título en src/template.html
+---
 
-Escribe tu app en src/index.js.
+## 🛠️ Tecnologías utilizadas
+
+- Node.js (v22+)
+- ES Modules
+- Webpack 5
+- Babel (para compatibilidad)
+- Webpack Dev Server (para desarrollo rápido)
+- HTML & JS vanilla
+
+---
+
+## 📁 Estructura del proyecto
