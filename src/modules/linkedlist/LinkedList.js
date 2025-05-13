@@ -106,4 +106,56 @@ export default class LinkedList {
     }
     return str + 'null';
   }
+
+  insertAt(value, index) {
+    if (index < 0 || index > this.size()) {
+      console.error('Índice fuera de rango');
+      return;
+    }
+
+    const newNode = new Node(value);
+
+    if (index === 0) {
+      newNode.nextNode = this.headNode;
+      this.headNode = newNode;
+      return;
+    }
+
+    let current = this.headNode;
+    let previous = null;
+    let currentIndex = 0;
+
+    while (currentIndex < index) {
+      previous = current;
+      current = current.nextNode;
+      currentIndex++;
+    }
+
+    newNode.nextNode = current;
+    previous.nextNode = newNode;
+  }
+
+  removeAt(index) {
+    if (index < 0 || index >= this.size()) {
+      console.error('Índice fuera de rango');
+      return;
+    }
+
+    if (index === 0) {
+      this.headNode = this.headNode.nextNode;
+      return;
+    }
+
+    let current = this.headNode;
+    let previous = null;
+    let currentIndex = 0;
+
+    while (currentIndex < index) {
+      previous = current;
+      current = current.nextNode;
+      currentIndex++;
+    }
+
+    previous.nextNode = current.nextNode;
+  }
 }
