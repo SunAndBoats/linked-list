@@ -18,3 +18,14 @@ Incluye los métodos fundamentales y algunos adicionales como extra.
 ---
 
 ## 📁 Estructura del proyecto
+
+src/
+modules/
+linkedlist/
+LinkedList.js
+LinkedList.test.js
+index.js
+
+## ✅ Tests
+
+Se probaron todos los métodos, incluyendo inserciones en índices válidos, eliminación, y representación como string.
